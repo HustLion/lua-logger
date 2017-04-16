@@ -2,7 +2,7 @@
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>LuaLogging: A simple API to use logging features in Lua</title>
+	<title>log4l: A simple API to use logging features in Lua</title>
     <link rel="stylesheet" href="doc.css" type="text/css"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
@@ -14,14 +14,14 @@
 	<div id="product_logo">
 		<img alt="LuaLogging logo" src="images/lualogging-128.png"/>
 	</div>
-	<div id="product_name"><big><strong>LuaLogging</strong></big></div>
+	<div id="product_name"><big><strong>log4l</strong></big></div>
 	<div id="product_description">A simple API to use logging features in Lua.  <a href="br/">Portuguese version.</a></div>
 </div> <!-- id="product" -->
 
 <div id="main">
 
 <div id="navigation">
-<h1>LuaLogging</h1>
+<h1>log4l</h1>
 	<ul>
 		<li><a href="index.html">Home</a>
 			<ul>
@@ -52,9 +52,9 @@
 				<li><a href="email.html">Email</a></li>
 			</ul>
 		</li>
-		<li><a href="https://github.com/Neopallium/lualogging">Project</a>
+		<li><a href="https://github.com/mwchase/log4l">Project</a>
 			<ul>
-				<li><a href="https://github.com/Neopallium/lualogging/issues">Bug Tracker</a></li>
+				<li><a href="https://github.com/mwchase/log4l/issues">Bug Tracker</a></li>
 			</ul>
 		</li>
 		<li><a href="license.html">License</a></li>
@@ -65,13 +65,13 @@
 
 <h2><a name="introduction"></a>Introduction</h2>
 
-<p>LuaLogging provides a simple API to use logging features in Lua.
+<p>log4l provides a simple API to use logging features in Lua.
 Its design was based on
 <a href="http://logging.apache.org/log4j/docs/index.html">log4j</a>.
-LuaLogging currently supports console, file, email, socket and sql
+log4l currently supports console, file, email, socket and sql
 outputs through the use of <em><a href="#appenders">appenders</a></em>.</p>
 
-<p>LuaLogging defines one single global variable, a table called
+<p>log4l defines one single global variable, a table called
 <code>logging</code> which holds a function to create new
 <a href="#logger"><code>logger</code></a> objects.</p>
 
@@ -90,9 +90,9 @@ that will be called on each call to log a message.</p>
 <h2><a name="installation"></a>Installation</h2>
 
 <p>
-LuaLogging follows the
+log4l follows the
 <a href="http://www.inf.puc-rio.br/~roberto/pil2/chapter15.pdf">package model</a>
-for Lua 5.1, therefore it should be "installed" in you <code>package.path</code>
+for Lua 5.1, therefore it should be "installed" in your <code>package.path</code>
 </p>
 
 <h2><a name="logger"></a>Logger objects</h2>
